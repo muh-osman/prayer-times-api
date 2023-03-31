@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prayer-times-api</title>
-</head>
-<body>
-    <h1>دمشق</h1>
-    <h2>الجمعة 5 ايلول 2023</h2>
-    <hr/>
-    <div class="">
-        <div>
-            <h3></h3>
-            <h4></h4>
-        </div>
-    </div>
-
-    <select name="" id="">
-        <option value="">دمشق</option>
-        <option value="">حلب</option>
-        <option value="">حمص</option>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Prayer Times API</title>
+  </head>
+  <body dir="rtl">
+    
+    <select name="" id="select">
+      <option value="Damascus">دمشق</option>
+      <option value="Homs">حمص</option>
+      <option value="Alepo">حلب</option>
     </select>
 
+    <h2 class="date" id="date"></h2>
 
+    <hr />
 
+    <div class="prayer_times_container">
+      <div class="times_box">
+        <h3 class="prayer_name">الفجر</h3>
+        <h4 class="prayer_time" id="Fajr"></h4>
+      </div>
+      <div class="times_box">
+        <h3 class="prayer_name">الشروق</h3>
+        <h4 class="prayer_time" id="Sunrise"></h4>
+      </div>
+      <div class="times_box">
+        <h3 class="prayer_name">الظهر</h3>
+        <h4 class="prayer_time" id="Dhuhr"></h4>
+      </div>
+      <div class="times_box">
+        <h3 class="prayer_name">العصر</h3>
+        <h4 class="prayer_time" id="Asr"></h4>
+      </div>
+      <div class="times_box">
+        <h3 class="prayer_name">المغرب</h3>
+        <h4 class="prayer_time" id="Maghrib"></h4>
+      </div>
+      <div class="times_box">
+        <h3 class="prayer_name">العشاء</h3>
+        <h4 class="prayer_time" id="Isha"></h4>
+      </div>
+    </div>
+
+    <a target="_blank" href="https://aladhan.com/prayer-times-api">Prayer Times API</a>
 
     <script src="./node_modules/axios/dist/axios.js"></script>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>

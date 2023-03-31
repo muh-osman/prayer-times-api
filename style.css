@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tajawal", sans-serif !important;
+  background-image: linear-gradient(45deg, rgb(191, 90, 242), rgb(255, 55, 95));
+  min-height: 100vh;
+  padding: 16px;
+  position: relative;
+}
+
+::selection {
+  background-color: rgb(191, 90, 242);
+}
+
+select {
+  font-family: "Tajawal", sans-serif;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #f1f1f1;
+  font-size: 150px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+select:hover {
+  color: #1c1c1e;
+}
+
+.date {
+  height: 40px;
+  color: #f1f1f1;
+  font-size: 26px;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  border-radius: 9px;
+  background-color: #f1f1f1;
+}
+
+.prayer_times_container {
+  margin-top: 44px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.times_box {
+  width: 150px;
+  height: 200px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 10px 10px 50px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 35px -16px rgba(0, 0, 0, 0.75);
+}
+
+.prayer_name {
+  padding: 6px 12px;
+  background-color: rgb(191, 90, 242);
+  color: #1c1c1e;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.prayer_time {
+  padding: 12px;
+  background-color: #f1f1f1;
+  color: #1c1c1e;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+a {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  padding-bottom: 12px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #1c1c1e;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+@media (max-width: 500px) { 
+  select {
+    font-size: 115px;
+  }
+ }
