@@ -108,3 +108,8 @@ a:hover {
     font-size: 115px;
   }
  }
+
+ .blink {
+   color: #f1f1f1;
+   background-color: #1c1c1e;
+ }
