@@ -36,17 +36,14 @@ async function fetchBasedCity(city = "Damascus") {
     let d = new Date();
     let minute = d.getMinutes()
     let hour = minute.toString().length < 2 ? d.getHours() *= 10 : d.getHours()
-
-
     let currentTime = +`${hour}${minute}`
-    
+
     fajrTime = +baseTimeData.Fajr.replace(':','')
     sunriseTime = +baseTimeData.Sunrise.replace(':','')
     dhuhrTime = +baseTimeData.Dhuhr.replace(':','')
     asrTime = +baseTimeData.Asr.replace(':','')
     maghribTime = +baseTimeData.Maghrib.replace(':','')
     ishaTime = +baseTimeData.Isha.replace(':','')
-
 
     if (currentTime > fajrTime && currentTime < sunriseTime) {
       sunrise.classList.add("blink")
@@ -66,7 +63,6 @@ async function fetchBasedCity(city = "Damascus") {
     if (currentTime > ishaTime || currentTime < fajrTime) {
       fajr.classList.add("blink")
     }
-
 
   } catch (error) {
     console.error(error);
